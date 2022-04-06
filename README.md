@@ -5,6 +5,6 @@
 * Moviment System
 * Food and Lenght System
 * Score Counter System
-* Collision and Die Screen
+* Collision and Game Over Screen
 #
 ![](https://github.com/Hanabusa7/Snake-Game/blob/main/GIF-SNAKE.gif)
