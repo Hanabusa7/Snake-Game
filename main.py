@@ -4,7 +4,6 @@ import random
 from pygame.locals import *
 
 pygame.font.init()
-pygame.mixer.init()
 
 
 def on_grid_random():
@@ -41,14 +40,6 @@ clock = pygame.time.Clock()
 font = pygame.font.Font('freesansbold.ttf', 18)
 score = 0
 
-apple_sound = pygame.mixer.Sound('apple_sound.wav')
-pygame.mixer.Sound.set_volume(apple_sound, 0.1)
-game_over_sound = pygame.mixer.Sound('game_over.wav')
-pygame.mixer.Sound.set_volume(game_over_sound, 0.2)
-snake_background = pygame.mixer.music.load('snake_background.wav')
-pygame.mixer.music.set_volume(0.2)
-pygame.mixer.music.play(-1)
-
 pygame.init()
 screen = pygame.display.set_mode((600, 600))
 pygame.display.set_caption("Snake Game")
@@ -76,7 +67,6 @@ while not game_over:
         apple_pos = on_grid_random()
         snake.append((0, 0))
         score = score + 1
-        pygame.mixer.Sound.play(apple_sound)
         snake_speed = (snake_speed + score / 15)
 
     if snake[0][0] == 600 or snake[0][1] == 600 or snake[0][0] < 0 or snake[0][1] < 0:
