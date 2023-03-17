@@ -113,7 +113,6 @@ while not game_over:
 while True:
     game_over_font = pygame.font.Font('freesansbold.ttf', 75)
     game_over_screen = game_over_font.render('Game Over', True, (255, 255, 255))
-    pygame.mixer.Sound.play(game_over_sound)
     game_over_ract = game_over_screen.get_rect()
     game_over_ract.midtop = (600 / 2, 250)
     screen.blit(game_over_screen, game_over_ract)
