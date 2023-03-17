@@ -1,5 +1,5 @@
 # Snake Game
-### Game based on the famous Snake Game. Using Python and libraries in order to study codes.
+### Game based on the famous Snake Game. Using Python and libraries in order to study Python.
 #
 ### Features:
 * Moviment System
